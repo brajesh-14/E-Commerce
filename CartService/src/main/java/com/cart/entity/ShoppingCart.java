@@ -20,6 +20,6 @@ public class ShoppingCart {
     private Long id;
     private Long userId;
 
-    @OneToMany(mappedBy = "cart")
+    @OneToMany(mappedBy = "shoppingCart", cascade = CascadeType.ALL)
     private Set<CartItem> cartItems = new HashSet<>();
 }

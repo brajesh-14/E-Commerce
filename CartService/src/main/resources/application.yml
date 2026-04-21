@@ -16,3 +16,11 @@ spring:
       restart:
         enabled: true
 
+    security:
+      user:
+        name: brajesh
+        password: brajesh
+
+server:
+    port: 8082
+
