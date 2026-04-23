@@ -23,6 +23,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     private final ShoppingCartRepo shoppingCartRepo;
     private final CartItemRepo cartItemRepo;
 
+    @Transactional
     @Override
     public ResponseEntity<?> createShoppingCart(CreateShoppingCartRequestDto cartRequestDto) {
 
@@ -230,6 +231,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
         }
     }
 
+    @Transactional
     @Override
     public ResponseEntity<?> clearCart(CleanCartReqDto cleanCartReqDto) {
 
